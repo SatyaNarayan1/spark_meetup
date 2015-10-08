@@ -1,16 +1,16 @@
 # spark_meetup
 Example code from IBM spark meetup "Deep dive into RDD"
 
-## prerquisite 
+### Prerquisite 
 * Scala
 * Sbt
 * Intellij/Eclipse
 
-## 1. Getting code
+### Getting code
 
            git clone https://github.com/SatyaNarayan1/spark_meetup.git
 
-## build the code
+### Build & Run
 
         sbt clean package
         sbt "run-main <Main Class Name> <args>"
