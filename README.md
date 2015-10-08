@@ -1,5 +1,5 @@
 # spark_meetup
-Example code from IBM spark meetup "Deep Dive into RDD"
+Example code from IBM spark meetup "Deep dive into RDD"
 
 ## prerquisite 
 * Scala
