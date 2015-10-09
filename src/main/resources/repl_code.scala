@@ -9,6 +9,10 @@ sc.textFile("/Users/psatya/git/spark_meetup/src/main/resources/Readme.md")
   .reduceByKey(_+_)
   .collect()
 
+//Shuffle
+
+
+
 //lineage
 
 import org.apache.spark.rdd.RDD

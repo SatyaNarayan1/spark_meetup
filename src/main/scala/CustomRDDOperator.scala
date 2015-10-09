@@ -7,8 +7,10 @@ import org.apache.spark.rdd.RDD
 
 object RDDImplicits {
 
+  //Implicit class
   implicit class RichRDD(rdd:RDD[String])
   {
+
     def wordCount = {
       rdd.flatMap(line => line.split(" "))
         .map(word => (word, 1))

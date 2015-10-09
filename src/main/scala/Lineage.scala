@@ -12,6 +12,7 @@ object Lineage {
   {
     rdd.dependencies.head.rdd.getClass.getSimpleName
   }
+
  def main (args:Array[String]) {
 
    val conf = new SparkConf().setAppName("Lineage-Demo").setMaster(args(0))
@@ -28,7 +29,7 @@ object Lineage {
 
    val wordCount =  wordMap.reduceByKey(_+_)
    println("Parent for wordCount = "+getDependency(wordMap) )
-   println(wordCount.collect)
+    wordCount.collect.foreach(println)
 
 
  }
