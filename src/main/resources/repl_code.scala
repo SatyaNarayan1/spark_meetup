@@ -10,6 +10,18 @@ sc.textFile("/Users/psatya/git/spark_meetup/src/main/resources/Readme.md")
   .collect()
 
 //Shuffle
+sc.textFile("/Users/psatya/Downloads/part-00000")
+  .flatMap(line=>line.split(" "))
+  .map(word => (word,1))
+  .reduceByKey(_+_)
+  .count
+
+sc.textFile("/Users/psatya/Downloads/part-00000")
+  .flatMap(line=>line.split(" "))
+  .map(word => (word,1))
+  .groupByKey()
+  .map(row=>(row._1,row._2.sum))
+  .count
 
 
 

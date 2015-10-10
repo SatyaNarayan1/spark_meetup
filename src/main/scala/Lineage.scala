@@ -28,7 +28,7 @@ object Lineage {
    println("Parent for wordMap = "+getDependency(wordMap) )
 
    val wordCount =  wordMap.reduceByKey(_+_)
-   println("Parent for wordCount = "+getDependency(wordMap) )
+   println("Parent for wordCount = "+getDependency(wordCount) )
     wordCount.collect.foreach(println)
 
 
