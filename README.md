@@ -1,4 +1,4 @@
-# spark_meetup
+# Spark Meetup
 Example code from IBM spark meetup "Deep dive into RDD"
 
 ### Prerquisite 
@@ -14,4 +14,5 @@ Example code from IBM spark meetup "Deep dive into RDD"
 
         sbt clean package
         sbt "run-main <Main Class Name> <args>"
+        ex: sbt "run-main Lineage local[4] /path/to/README.md"
 
