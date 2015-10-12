@@ -1,6 +1,4 @@
-/**
- * Created by psatya on 10/10/15.
- */
+
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkContext, SparkConf, TaskContext, Partition}
 
@@ -24,6 +22,7 @@ class AlphabetRDD(prev:RDD[String]) extends RDD[String](prev){
   }
 
   override protected def getPartitions: Array[Partition] = firstParent[String].partitions
+  override val partitioner = firstParent[String].partitioner
 
 }
 

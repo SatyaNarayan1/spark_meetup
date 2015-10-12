@@ -1,6 +1,4 @@
-/**
- * Created by psatya on 09/10/15.
- */
+
 
 import org.apache.spark.{SparkContext,SparkConf}
 import org.apache.spark.rdd.RDD

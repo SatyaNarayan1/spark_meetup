@@ -1,9 +1,7 @@
 import org.apache.spark.{SparkEnv, SparkContext, SparkConf}
 import org.apache.spark.storage.RDDBlockId
 
-/**
- * Created by psatya on 10/10/15.
- */
+
 object CacheExample {
   def main(args:Array[String]) {
     val conf = new SparkConf().setAppName("Lineage-Demo").setMaster(args(0))
